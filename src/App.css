@@ -1,0 +1,41 @@
+@keyframes fadeZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero-slika {
+    animation: fadeZoomIn 1.2s ease-out forwards;
+}
+
+@keyframes glowNvidia {
+    0%, 100% { box-shadow: 0 0 6px 2px rgba(0, 255, 70, 0.4); }
+    50%       { box-shadow: 0 0 18px 6px rgba(0, 255, 70, 0.9); }
+}
+
+@keyframes glowAmd {
+    0%, 100% { box-shadow: 0 0 6px 2px rgba(237, 28, 36, 0.4); }
+    50%       { box-shadow: 0 0 18px 6px rgba(237, 28, 36, 0.9); }
+}
+
+@keyframes glowIntel {
+    0%, 100% { box-shadow: 0 0 6px 2px rgba(0, 113, 197, 0.4); }
+    50%       { box-shadow: 0 0 18px 6px rgba(0, 113, 197, 0.9); }
+}
+
+.glow-nvidia {
+    animation: glowNvidia 2s ease-in-out infinite;
+}
+
+.glow-amd {
+    animation: glowAmd 2s ease-in-out infinite;
+}
+
+.glow-intel {
+    animation: glowIntel 2s ease-in-out infinite;
+}
